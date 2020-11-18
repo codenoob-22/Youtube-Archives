@@ -129,6 +129,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# --- custom settings ------->
+
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10,
+}
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -153,7 +160,13 @@ LOGGING = {
             'class': 'logging.FileHandler',
             'formatter': 'verbose',
             'filename': BASE_DIR / 'logs/debug.log'
-        }
+        },
+        'jobs': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'formatter': 'verbose',
+            'filename': BASE_DIR / 'logs/background.log',
+        },
     },
     'loggers': {
         'process_log': {
@@ -161,5 +174,12 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': True,
         },
+        'background_jobs': {
+            'handlers': ['jobs'],
+            'level': 'DEBUG',
+            'propogate':True,
+        }
     },
 }
+
+YOUTUBE_API_URL = "https://www.googleapis.com/youtube/v3/search?"

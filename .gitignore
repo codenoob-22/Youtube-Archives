@@ -1,3 +1,4 @@
 video_store/__pycache__/*
 YoutubeArchive/__pycache__/
 *.pyc
+*.log
