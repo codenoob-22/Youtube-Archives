@@ -14,6 +14,10 @@ class Video(models.Model):
     def __str__(self):
         return f"{self.youtube_id}-{self.title}"
 
+    @property
+    def thumbnail(self):
+        return f"https://i.ytimg.com/vi/{self.youtube_id}/mqdefault.jpg"
+
     @staticmethod
     def search_videos_with_keywords(keywords):
         # cache_key = '_'.join(sorted(keywords))

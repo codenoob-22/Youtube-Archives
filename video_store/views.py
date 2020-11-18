@@ -11,7 +11,7 @@ logger = logging.getLogger("process_log")
 class VideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
-        fields = ("title", "youtube_id", "published_date")
+        fields = ("title", "youtube_id", "published_date", "thumbnail")
     
 
 class VideoView(mixins.ListModelMixin, viewsets.GenericViewSet):
@@ -19,9 +19,7 @@ class VideoView(mixins.ListModelMixin, viewsets.GenericViewSet):
 
     def get_queryset(self):
         search_query = self.request.query_params.get('search_query', [''])
-        logger.info(search_query)
         keywords = [i for i in search_query.split(' ') if i != '']
-        # return Video.objects.all()
         return Video.search_videos_with_keywords(keywords)
 
 VideoRoute = DefaultRouter()
