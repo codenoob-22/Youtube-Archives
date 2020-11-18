@@ -2,11 +2,13 @@ from django.db import models
 from django.db.models import CharField, DateTimeField, IntegerField, BooleanField
 from django.db.models import Q
 # Create your models here.
+import logging
 
+logger = logging.getLogger("process_log")
 
 class Video(models.Model):
     title           = CharField(max_length=200, help_text="video title")
-    youtube_id      = CharField(max_length=20, help_text="videoId")
+    youtube_id      = CharField(max_length=20, unique=True, help_text="videoId")
     published_date  = DateTimeField()
 
     def __str__(self):
@@ -18,13 +20,13 @@ class Video(models.Model):
         query = Q()
         queryset = None
         for keyword in keywords:
-            query |= Q(title__icontains=keyword)
+            query &= Q(title__icontains=keyword)
         if query:
             queryset = Video.objects.filter(query)
         
         return queryset
 
-class APIKeys(models.Model):
+class APIKey(models.Model):
     '''  model to store youtube API keys'''
     api_key             = CharField(max_length=200, help_text="api key of youtube API") 
     quota_available     = BooleanField(default=True, help_text="check whether quota is finished, update to false")
@@ -32,5 +34,4 @@ class APIKeys(models.Model):
 
     def __str__(self):
         return self.api_key
-    
     
