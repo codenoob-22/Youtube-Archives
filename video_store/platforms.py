@@ -12,20 +12,26 @@ import logging
 
 logger = logging.getLogger("process_log")
 
+
 class YouTube:
     ''' class implements all Youtube API interactions '''
     def __init__(self, apikey):
         self.url = f"{settings.YOUTUBE_API_URL}key={apikey}" 
     
-    def get_video_results(self, search_term, published_date, page_token=None):
+    def get_video_results(self, search_term, published_after=None, page_token=None, published_before=None):
 
+        if not published_after:
+            raise ValueError("please provide published_after")
         query_params={
-            "publishedAfter": published_date,
+            "publishedAfter": published_after,
             "q": search_term,
             "relevanceLanguage": "EN",
             "regionCode": "IN",
+            "order": "date"
         }
 
+        if published_before:
+            query_params['publishedBefore'] = published_before
 
         self.url += '&' + urlencode(query_params)
         url = self.url

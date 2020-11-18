@@ -50,6 +50,21 @@ class APIKey(models.Model):
     def __str__(self):
         return self.api_key
     
+    @staticmethod
+    def get_api_key():
+        # using the one which is least recently used
+        '''
+            TODO: decide what action to take when we dont have a single apikey with quota available
+        '''
+        least_recent_apikey = APIKey.objects.filter(quota_available=True).order_by('last_used').first()
+        least_recent_apikey.last_used = datetime.now(UTC)
+        least_recent_apikey.save()
+        return least_recent_apikey.api_key
+
+    @staticmethod
+    def set_status_to_exhausted(api_key):
+        APIKey.objects.filter(api_key=api_key).update(quota_available=False)
+    
 class RemainingJobs(models.Model):
     ''' 
         Model to store failed jobs due to quota exhaustion
