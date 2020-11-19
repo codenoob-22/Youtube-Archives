@@ -124,3 +124,7 @@ INFO 2020-11-19 17:40:02,122 platforms 7609 22 got apikey as AIzaSyB8R0la8VKAN7-
 INFO 2020-11-19 17:40:02,122 platforms 7609 43 checking for published after- 2020-11-19 16:32:50+00:00
 INFO 2020-11-19 17:40:03,460 platforms 7609 80 got end after 1 pages
 INFO 2020-11-19 17:40:03,551 models 7609 57 19 video/s have been added to database
+INFO 2020-11-19 17:45:03,197 platforms 8231 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-19 17:45:03,197 platforms 8231 43 checking for published after- 2020-11-19 17:16:41+00:00
+INFO 2020-11-19 17:45:22,666 platforms 8231 88 got end after 1 pages
+INFO 2020-11-19 17:45:22,668 models 8231 57 0 video/s have been added to database
