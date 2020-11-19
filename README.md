@@ -20,6 +20,11 @@ pip install -r requirements.txt
 ```
 to run server use command
 ```
+#adds the cronjobs - made them to run every five minutes for now
+python manage.py crontab add
+#removes the cronjobs- in case you want to stop it
+python manage.py crontab remove
+#runs the server
 python manage.py runserver
 ```
 currently there is no dashboard, but there is a little hack, you can visit this link to get a search bar along with results in bottom
