@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+from YoutubeArchive.cronjobs import CRONJOBS
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -133,13 +133,6 @@ STATIC_URL = '/static/'
 
 # --- custom settings ------->
 
-CRONJOBS = (
-    ('*/2 * * * *', 'video_store.tasks.fetch_and_add_videos_to_db'),
-    ('*/2 * * * *', 'video_store.tasks.complete_remaining_jobs'),
-    ('*/2 * * * *', 'video_store.tasks.refresh_keys')
-)
-
-
 
 
 REST_FRAMEWORK = {
@@ -172,21 +165,22 @@ LOGGING = {
             'formatter': 'verbose',
             'filename': BASE_DIR / 'logs/debug.log'
         },
-        'jobs': {
+        'syslog': {
             'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'formatter': 'verbose',
-            'filename': BASE_DIR / 'logs/background.log',
+            'class': 'logging.handlers.SysLogHandler',
+            'facility': 'local0',
+            'address': '/dev/log',
+            'formatter': 'verbose'
         },
     },
     'loggers': {
         'process_log': {
-            'handlers': ['file', 'console'],
+            'handlers': ['file', 'console', 'syslog'],
             'level': 'DEBUG',
             'propagate': True,
         },
         'background_jobs': {
-            'handlers': ['jobs'],
+            'handlers': ['file', 'syslog'],
             'level': 'DEBUG',
             'propogate':True,
         }

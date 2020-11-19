@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from django.db import models
 from django.db.models import CharField, TextField, DateTimeField, IntegerField, BooleanField
 from django.db.models import Q
+from asgiref.sync import sync_to_async
 # Create your models here.
 import logging
 
@@ -24,7 +25,7 @@ class Video(models.Model):
             not storing it in database rather retrieving from youtube_id
         '''
         return f"https://i.ytimg.com/vi/{self.youtube_id}/mqdefault.jpg"
-
+    # @sync_to_async
     @staticmethod
     def search_videos_with_keywords(keywords):
         # cache_key = '_'.join(sorted(keywords))
@@ -43,6 +44,17 @@ class Video(models.Model):
             queryset = Video.objects.filter(query)
         
         return queryset
+    
+    @staticmethod
+    def store_to_db(video_data):
+        youtube_ids = [v['youtube_id'] for v in video_data]
+        existing_youtube_ids = Video.objects.filter(youtube_id__in=youtube_ids).values_list('youtube_id', flat=True)
+        videos = [Video(**data) for data in video_data \
+                    if data['youtube_id'] not in existing_youtube_ids \
+                    and data['youtube_id']]
+
+        Video.objects.bulk_create(videos)
+        logger.info(f"{len(videos)} video/s have been added to database")
 
 class APIKey(models.Model):
     '''  model to store youtube API keys'''
@@ -53,6 +65,7 @@ class APIKey(models.Model):
     def __str__(self):
         return self.api_key
     
+    # @sync_to_async
     @staticmethod
     def get_api_key():
         # using the one which is least recently used
@@ -67,6 +80,7 @@ class APIKey(models.Model):
         least_recent_apikey.save()
         return least_recent_apikey.api_key
 
+    # @sync_to_async
     @staticmethod
     def set_status_to_exhausted(api_key):
         UTC = pytz.timezone('UTC')
@@ -87,6 +101,7 @@ class RemainingJobs(models.Model):
     upper_date_bound    = DateTimeField(help_text="storing upper bound so we know that our list is between the bounds")
     reason_for_failure  = TextField(default='', help_text="can be used for analysis of errors") 
 
+    # @sync_to_async
     @staticmethod
     def add_job(page_token, upper_bound, lower_bound, reason):
         job = RemainingJobs.objects.create(

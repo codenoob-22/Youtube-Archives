@@ -36,3 +36,91 @@ INFO 2020-11-18 17:50:36,160 process_log  32007 23 ['want', 'good']
 INFO 2020-11-18 17:50:36,173 process_log  32007 23 ['want', 'good']
 INFO 2020-11-18 17:54:13,284 views 32358 23 ['want', 'good']
 INFO 2020-11-18 17:54:13,297 views 32358 23 ['want', 'good']
+ERROR 2020-11-19 15:42:56,112 platforms 29619 88 ****************************************************************************************************
+ERROR 2020-11-19 15:42:56,191 platforms 29619 89 got response status_code: - 400
+ERROR 2020-11-19 15:42:56,193 platforms 29619 90 {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+ERROR 2020-11-19 15:42:56,195 platforms 29619 91 ****************************************************************************************************
+ERROR 2020-11-19 15:46:22,330 platforms 29619 88 ****************************************************************************************************
+ERROR 2020-11-19 15:46:22,332 platforms 29619 89 got response status_code: - 400
+ERROR 2020-11-19 15:46:22,335 platforms 29619 90 {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+ERROR 2020-11-19 15:46:22,336 platforms 29619 91 ****************************************************************************************************
+ERROR 2020-11-19 15:53:18,303 platforms 30383 88 ****************************************************************************************************
+ERROR 2020-11-19 15:53:18,305 platforms 30383 89 got response status_code: - 400
+ERROR 2020-11-19 15:53:18,308 platforms 30383 90 {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+ERROR 2020-11-19 15:53:18,311 platforms 30383 91 ****************************************************************************************************
+INFO 2020-11-19 15:56:58,737 platforms 30500 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-19 15:58:23,857 platforms 30500 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-19 16:00:11,467 platforms 30961 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-19 16:00:13,542 platforms 30961 78 got end after 0 pages
+INFO 2020-11-19 16:02:18,084 platforms 31173 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 16:02:18,087 platforms 31173 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T16%3A01%3A17Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 16:02:19,859 platforms 31173 79 got end after 0 pages
+INFO 2020-11-19 16:03:10,524 platforms 31288 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 16:03:10,525 platforms 31288 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T15%3A03%3A09Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 16:03:15,992 platforms 31288 79 got end after 1 pages
+INFO 2020-11-19 16:06:43,495 platforms 31288 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 16:06:43,499 platforms 31288 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T15%3A06%3A43Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 16:06:44,211 platforms 31288 79 got end after 1 pages
+INFO 2020-11-19 16:08:16,929 platforms 31608 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 16:08:16,931 platforms 31608 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T15%3A59%3A22Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 16:08:26,915 platforms 31608 79 got end after 1 pages
+INFO 2020-11-19 16:09:44,831 platforms 31608 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 16:09:44,832 platforms 31608 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T15%3A59%3A22Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 16:09:45,590 platforms 31608 79 got end after 1 pages
+INFO 2020-11-19 17:09:52,141 platforms 31608 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 17:09:52,142 platforms 31608 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T15%3A59%3A22Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 17:09:55,292 platforms 31608 79 got end after 1 pages
+INFO 2020-11-19 17:10:16,759 platforms 31608 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+DEBUG 2020-11-19 17:10:16,761 platforms 31608 53 url - https://www.googleapis.com/youtube/v3/search?key=AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE&publishedAfter=2020-11-19T16%3A30%3A50Z&q=medical&relevanceLanguage=EN&regionCode=IN&order=date&maxResults=50&part=snippet
+INFO 2020-11-19 17:10:19,654 platforms 31608 79 got end after 1 pages
+INFO 2020-11-19 17:10:30,884 platforms 4994 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-19 17:10:30,889 platforms 4994 43 checking for published after- 2020-11-19 16:30:50+00:00
+INFO 2020-11-19 17:10:32,961 platforms 4994 80 got end after 1 pages
+INFO 2020-11-19 17:10:33,160 models 4994 57 1 have been added to database
+===================
+INFO 2020-11-19 17:40:02,122 platforms 7609 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-19 17:40:02,122 platforms 7609 43 checking for published after- 2020-11-19 16:32:50+00:00
+INFO 2020-11-19 17:40:03,460 platforms 7609 80 got end after 1 pages
+INFO 2020-11-19 17:40:03,551 models 7609 57 19 video/s have been added to database
