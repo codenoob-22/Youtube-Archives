@@ -1,6 +1,6 @@
 # Youtube-Archives
 
-What this project does -
+What this project does -  
   A basic app that fetches video details of latest videos for given search query
   from YouTube API and store them into database. This should run continuously in
   Some given time interval. 
