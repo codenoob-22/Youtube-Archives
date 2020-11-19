@@ -22,8 +22,7 @@ class Video(models.Model):
 
     @property
     def thumbnail(self):
-        ''' since yt thumbnails are stored with this address, so 
-            not storing it in database rather retrieving from youtube_id
+        ''' using static address for retrieving thumbnails
         '''
         return f"https://i.ytimg.com/vi/{self.youtube_id}/mqdefault.jpg"
     # @sync_to_async
@@ -35,7 +34,7 @@ class Video(models.Model):
         queryset = Video.objects.all().order_by('-published_at')
         
         for keyword in keywords:
-            # we are making nexxesary that all kywords should be contained either in
+            # we are making neccesary that all keywords should be contained either in
             # title or description 
             title_query &= Q(title__icontains=keyword)
             description_query &= Q(description__icontains=keyword)
@@ -48,6 +47,7 @@ class Video(models.Model):
     
     @staticmethod
     def store_to_db(video_data):
+        ''' method for storing video data along with handling duplication of any video '''
         youtube_ids = [v['youtube_id'] for v in video_data]
         existing_youtube_ids = Video.objects.filter(youtube_id__in=youtube_ids).values_list('youtube_id', flat=True)
         videos = [Video(**data) for data in video_data \
@@ -70,9 +70,6 @@ class APIKey(models.Model):
     @staticmethod
     def get_api_key():
         # using the one which is least recently used
-        '''
-            TODO: decide what action to take when we dont have a single apikey with quota available
-        '''
         UTC = pytz.timezone('UTC')
         least_recent_apikey = APIKey.objects.filter(quota_available=True).order_by('last_used').first()
         if not least_recent_apikey:

@@ -39,7 +39,7 @@ def fetch_and_add_videos_to_db():
     Video.store_to_db(video_data)
 
 def complete_remaining_jobs():
-    ''' taking up the least recent job and finishing it '''
+    
     job = RemainingJobs.get_oldest_job()
     if not job:
         return
@@ -67,6 +67,7 @@ def complete_remaining_jobs():
 
 
 def refresh_keys():
+    '''refresh quotas for keys that have been inactive for 1 day'''
     UTC = pytz.timezone('UTC')
     refresh_time = datetime.now(UTC) - timedelta(days=1, minutes=1)
     APIKey.objects.filter(quota_available=False, last_used__lte=refresh_time).update(quota_available=True)
