@@ -16,6 +16,7 @@ create a virtual-environment using virtualenv or pyenv or python itself
 ```
 python3.7 -m venv env
 source env/bin/activate
+pip install -r requirements.txt
 ```
 to run server use command
 ```
