@@ -85,7 +85,7 @@ class RemainingJobs(models.Model):
                                                              " with the paginated results")
     lower_date_bound    = DateTimeField(help_text="storing the lower bound of date so that i can filter using after query")
     upper_date_bound    = DateTimeField(help_text="storing upper bound so we know that our list is between the bounds")
-    reason_for_failure  = TextField(help_text="can be used for analysis of errors") 
+    reason_for_failure  = TextField(default='', help_text="can be used for analysis of errors") 
 
     @staticmethod
     def add_job(page_token, upper_bound, lower_bound, reason):
