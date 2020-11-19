@@ -1,14 +1,12 @@
+import pytz
+from datetime import datetime
+
 from django.shortcuts import render
 from rest_framework import mixins, viewsets, serializers
 from rest_framework.routers import DefaultRouter
 from rest_framework.pagination import PageNumberPagination
 
-class SetPagination(PageNumberPagination):
-    page_size = 10
-    page_size_query_param = 'length'
-    max_page_size = 100
-
-from video_store.models import Video
+from video_store.models import Video, APIKey, RemainingJobs
 import logging
 # Create your views here.
 
@@ -29,4 +27,23 @@ class VideoView(mixins.ListModelMixin, viewsets.GenericViewSet):
         return Video.search_videos_with_keywords(keywords)
 
 VideoRoute = DefaultRouter()
-VideoRoute.register(r'', VideoView, basename='video-search')
+VideoRoute.register(r'', VideoView, basename='video')
+
+
+class APIkeySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = APIKey
+        fields = ("id", "api_key", "quota_available", "last_used")
+        extra_kwargs = {
+            "last_used": { "read_only": True},
+            "quota_available": { "read_only" : True}
+        }
+    
+
+class APIKeyView(viewsets.ModelViewSet):
+    serializer_class = APIkeySerializer
+    queryset = APIKey.objects.all()
+    
+
+APIKeyRoute = DefaultRouter()
+APIKeyRoute.register(r'', APIKeyView, basename='api_key')

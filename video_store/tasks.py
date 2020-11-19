@@ -40,27 +40,29 @@ def fetch_and_add_videos_to_db():
 
 def complete_remaining_jobs():
     ''' taking up the least recent job and finishing it '''
-    job = RemainingJobs.objects.all().order_by('lower_date_bound').first()
-    if job:
-        api_key = APIKey.get_api_key()
-        y = YouTube(api_key)
+    job = RemainingJobs.get_oldest_job()
+    if not job:
+        return
 
-        global SEARCH_TERM
-        response = y.get_video_results(SEARCH_TERM, 
-                                       published_after=job.lower_date_bound, 
-                                       published_before=job.upper_date_bound)
+    api_key = APIKey.get_api_key()
+    y = YouTube(api_key)
 
-        if response['status'] == 'error':
-            video_data = response['video_data']
-            # check if page_token is not null, otherwise we can lose our progress track
-            if response['page_token']:
-                job.page_token = response['page_token']  
-                job.save()
-        
-        if response['status'] == 'success':
-            job.delete()
+    global SEARCH_TERM
+    response = y.get_video_results(SEARCH_TERM, 
+                                    published_after=job.lower_date_bound, 
+                                    published_before=job.upper_date_bound)
+
+    if response['status'] == 'error':
         video_data = response['video_data']
-        Video.store_to_db(video_data)
+        # check if page_token is not null, otherwise we can lose our progress track
+        if response.get('page_token'):
+            job.page_token = response['page_token']  
+            job.save()
+    
+    if response['status'] == 'success':
+        job.delete()
+    video_data = response['video_data']
+    Video.store_to_db(video_data)
         
 
 

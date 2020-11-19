@@ -20,6 +20,7 @@ class YouTube:
         self.api_key = api_key
         self.url = f"{settings.YOUTUBE_API_URL}key={self.api_key}"
         logger.info(f"got apikey as " + self.api_key)
+
     def build_url_with_new_key(self, query_params):
         ''' when one key is exhausted, take another key from available keys'''
         APIKey.set_status_to_exhausted(self.api_key)
@@ -59,6 +60,8 @@ class YouTube:
                 if response.status_code == 403:
                     try:
                         self.build_url_with_new_key(query_params)
+                        if page_token:
+                            url = self.url + urlencode({'pageToken': page_token}) 
                     except ValueError:
                         return {
                         'status'    : 'error',

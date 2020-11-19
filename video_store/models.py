@@ -5,6 +5,7 @@ from django.db import models
 from django.db.models import CharField, TextField, DateTimeField, IntegerField, BooleanField
 from django.db.models import Q
 from asgiref.sync import sync_to_async
+from django.utils import timezone
 # Create your models here.
 import logging
 
@@ -60,7 +61,7 @@ class APIKey(models.Model):
     '''  model to store youtube API keys'''
     api_key             = CharField(max_length=200, unique=True, help_text="api key of youtube API") 
     quota_available     = BooleanField(default=True, help_text="check whether quota is finished, update to false")
-    last_used           = DateTimeField()
+    last_used           = DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.api_key
@@ -76,6 +77,7 @@ class APIKey(models.Model):
         least_recent_apikey = APIKey.objects.filter(quota_available=True).order_by('last_used').first()
         if not least_recent_apikey:
             logger.exception("FATAL: active API keys do not exist!!!!")
+            raise ValueError("we are exhausted on API keys")
         least_recent_apikey.last_used = datetime.now(UTC)
         least_recent_apikey.save()
         return least_recent_apikey.api_key
@@ -110,3 +112,8 @@ class RemainingJobs(models.Model):
             lower_date_bound    = lower_bound,
             reason_for_failure  = reason,
         )
+    
+    @staticmethod
+    def get_oldest_job():
+        oldest_job = RemainingJobs.objects.all().order_by('lower_date_bound').first()
+        return oldest_job
