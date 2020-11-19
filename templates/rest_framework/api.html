@@ -1,0 +1,9 @@
+{% extends "rest_framework/base.html" %}
+
+{% block branding %}
+    <form action="/video_store/search/" method="get" style=" color: black">
+        <label for="search_query" style="color: white">Search Box:</label><br />
+        <input type="text" id="search_query" name="search_query" placeholder="write your search query here">
+        <input type="submit" value="search">
+    </form>
+{% endblock %}

@@ -31,7 +31,7 @@ class Video(models.Model):
         # cache_key = '_'.join(sorted(keywords))
         title_query = Q()
         description_query = Q()
-        queryset = Video.objects.all()
+        queryset = Video.objects.all().order_by('-published_at')
         
         for keyword in keywords:
             # we are making nexxesary that all kywords should be contained either in
@@ -41,7 +41,7 @@ class Video(models.Model):
         
         query = title_query | description_query 
         if query:
-            queryset = Video.objects.filter(query)
+            queryset = Video.objects.filter(query).order_by('-published_at')
         
         return queryset
     
