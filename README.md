@@ -31,7 +31,7 @@ Sorry, this was my first time with docker so have a very basic docker setup.
 ```
 # do this within the repository.
 sudo docker build -t fam_backend .
-
-sudo docker run -p 8000:8000 fam_backend
+#run this command for the image name you find
+sudo docker run -p 8000:8000 fam_backend:latest
 
 ```
