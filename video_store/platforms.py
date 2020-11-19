@@ -58,6 +58,7 @@ class YouTube:
                     'youtube_id': item['id']['videoId'],
                     'title': item['snippet']['title'],
                     'published_at': parser.parse(item['snippet']['publishedAt']),
+                    'description': item['snippet']['description']
                 }
 
                 video_data.append(video_data_dict)

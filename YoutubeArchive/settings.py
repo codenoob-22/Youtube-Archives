@@ -46,6 +46,7 @@ OUR_APPS = [
 THIRD_PARTY_APPS = [
     'rest_framework',
     'django_extensions',
+    'django_crontab',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + OUR_APPS + THIRD_PARTY_APPS
@@ -131,6 +132,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # --- custom settings ------->
+
+CRONJOBS = (
+    ('*/2 * * * *', 'video_store.tasks.fetch_and_add_videos_to_db'),
+    ('*/2 * * * *', 'video_store.tasks.complete_remaining_jobs'),
+    ('*/2 * * * *', 'video_store.tasks.refresh_keys')
+)
+
+
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',

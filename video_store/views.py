@@ -17,7 +17,7 @@ logger = logging.getLogger("process_log")
 class VideoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Video
-        fields = ("title", "youtube_id", "published_at", "thumbnail")
+        fields = ("title", "youtube_id", "published_at", "thumbnail", "description")
     
 
 class VideoView(mixins.ListModelMixin, viewsets.GenericViewSet):

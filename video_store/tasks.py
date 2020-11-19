@@ -12,7 +12,7 @@ logger = logging.getLogger("background_jobs")
 
 SEARCH_TERM = "medical"
 
-def add_videos_to_db():
+def fetch_and_add_videos_to_db():
     ''' task for fetching videos and put it into DB '''
     UTC = pytz.timezone('UTC')
     try:
@@ -38,9 +38,11 @@ def add_videos_to_db():
                                         upper_date_bound=upper_bound)
         
         APIKey.set_status_to_exhausted(api_key)
+        logger.info(f"{api_key} got exhausted")
     video_data = response['video_data']
     videos = [Video(**data) for data in video_data]
     Video.objects.bulk_create(videos)
+    logger.info(f"{len(videos)} have been added to database in first go")
 
 def complete_remaining_jobs():
     ''' taking up the least recent job and finishing it '''

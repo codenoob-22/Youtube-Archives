@@ -57,6 +57,8 @@ class APIKey(models.Model):
             TODO: decide what action to take when we dont have a single apikey with quota available
         '''
         least_recent_apikey = APIKey.objects.filter(quota_available=True).order_by('last_used').first()
+        if not least_recent_apikey:
+            logger.exception("FATAL: active API keys do not exist!!!!")
         least_recent_apikey.last_used = datetime.now(UTC)
         least_recent_apikey.save()
         return least_recent_apikey.api_key
