@@ -1,6 +1,6 @@
 # Youtube-Archives
 
-What this project does -  
+## What this project does -  
   A basic app that fetches video details of latest videos for given search query
   from YouTube API and store them into database. This should run continuously in
   Some given time interval. 
@@ -11,7 +11,8 @@ tech stack used-
 Python==3.7
 Django==3.1.3
 ```
-
+## Instructions-  
+  
 create a virtual-environment using virtualenv or pyenv or python itself
 ```
 python3.7 -m venv env
@@ -40,4 +41,11 @@ sudo docker build -t fam_backend .
 #run this command for the image name you find
 sudo docker run -p 8000:8000 fam_backend:latest
 
+```
+## testing-  
+
+for testing cronjobs you can check debug.log in logs folder
+for testing api you can visit this url after starting server
+```
+localhost:8000/video_store/search/
 ```
