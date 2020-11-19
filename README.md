@@ -54,3 +54,12 @@ localhost:8000/video_store/search/
 1) manages multiple keys.
 2) has a dashboard( kind of :|) where you can put and view search results.
 3) has flexible search query api.
+4) this app also has jupyter notebook extension installed 
+you can use it by using 
+```
+ python manage.py shell_plus --notebook
+```use 
+```
+os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
+```
+To run functionalities normaly
