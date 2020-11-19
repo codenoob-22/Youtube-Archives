@@ -22,9 +22,9 @@ to run server use command
 ```
 python manage.py runserver
 ```
-currently there is no dashboard, you can try adding query param *search_query* to make the search query
+currently there is no dashboard, but there is a little hack, you can visit this link to get a search bar along with results in bottom
 ```
-localhost:8000/video_store/search/?search_query= want good
+localhost:8000/video_store/search/
 ```
 
 For docker file you would need to build image,
