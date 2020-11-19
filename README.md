@@ -49,3 +49,8 @@ for testing api you can visit this url after starting server
 ```
 localhost:8000/video_store/search/
 ```
+
+## Bonus Points-  
+1) manages multiple keys.
+2) has a dashboard( kind of :|) where you can put and view search results.
+3) has flexible search query api.
