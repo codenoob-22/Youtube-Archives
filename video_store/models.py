@@ -1,3 +1,6 @@
+import pytz
+from datetime import datetime, timedelta
+
 from django.db import models
 from django.db.models import CharField, TextField, DateTimeField, IntegerField, BooleanField
 from django.db.models import Q
@@ -56,6 +59,7 @@ class APIKey(models.Model):
         '''
             TODO: decide what action to take when we dont have a single apikey with quota available
         '''
+        UTC = pytz.timezone('UTC')
         least_recent_apikey = APIKey.objects.filter(quota_available=True).order_by('last_used').first()
         if not least_recent_apikey:
             logger.exception("FATAL: active API keys do not exist!!!!")
@@ -65,17 +69,29 @@ class APIKey(models.Model):
 
     @staticmethod
     def set_status_to_exhausted(api_key):
-        APIKey.objects.filter(api_key=api_key).update(quota_available=False)
+        UTC = pytz.timezone('UTC')
+        logger.info(f'{api_key} got exhausted')
+        APIKey.objects.filter(api_key=api_key).update(quota_available=False, last_used=datetime.now(UTC))
     
 class RemainingJobs(models.Model):
     ''' 
-        Model to store failed jobs due to quota exhaustion
+        Model to store failed jobs due to some reasons
         - there was one observation, even with same page_token the values were changing
         , and when i kept upper and lower bound on publishedAt it became constant.
         - tasks would make sure that lower and upper bound of one entry does not 
         intersect with any other entry. 
     '''
-    page_token          = CharField(max_length=20, unique=True, help_text="storing next page token so we can continue"
+    page_token          = CharField(max_length=20, help_text="storing next page token so we can continue"
                                                              " with the paginated results")
     lower_date_bound    = DateTimeField(help_text="storing the lower bound of date so that i can filter using after query")
     upper_date_bound    = DateTimeField(help_text="storing upper bound so we know that our list is between the bounds")
+    reason_for_failure  = TextField(help_text="can be used for analysis of errors") 
+
+    @staticmethod
+    def add_job(page_token, upper_bound, lower_bound, reason):
+        job = RemainingJobs.objects.create(
+            page_token          = page_token,
+            upper_date_bound    = upper_bound,
+            lower_date_bound    = lower_bound,
+            reason_for_failure  = reason,
+        )

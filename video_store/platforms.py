@@ -7,6 +7,7 @@ import google_auth_oauthlib.flow
 import googleapiclient
 
 from django.conf import settings
+from video_store.models import APIKey
 
 import logging
 
@@ -15,67 +16,75 @@ logger = logging.getLogger("process_log")
 
 class YouTube:
     ''' class implements all Youtube API interactions '''
-    def __init__(self, apikey):
-        self.url = f"{settings.YOUTUBE_API_URL}key={apikey}" 
-    
+    def __init__(self, api_key):
+        self.api_key = api_key
+
+    def build_url_with_new_key(self, query_params):
+        ''' when one key is exhausted, take another key from available keys'''
+        APIKey.set_status_to_exhausted(self.api_key)
+        self.api_key = APIKey.get_api_key()
+        self.url = f"{settings.YOUTUBE_API_URL}key={self.api_key}&" + urlencode(query_params)
+   
     def get_video_results(self, search_term, published_after=None, page_token=None, published_before=None):
 
         if not published_after:
-            raise ValueError("please provide published_after")
+            raise ValueError("argument missing `published_after`")
+
         query_params={
-            "publishedAfter": published_after,
-            "q": search_term,
-            "relevanceLanguage": "EN",
-            "regionCode": "IN",
-            "order": "date"
+            "publishedAfter"    : published_after.strftime('%Y-%m-%dT%H:%M:%SZ'),
+            "q"                 : search_term,
+            "relevanceLanguage" : "EN",
+            "regionCode"        : "IN",
+            "order"             : "date",
+            'maxResults'        : 50,
         }
 
         if published_before:
-            query_params['publishedBefore'] = published_before
+            query_params['publishedBefore'] = published_before.strftime('%Y-%m-%dT%H:%M:%SZ')
 
         self.url += '&' + urlencode(query_params)
         url = self.url
         if page_token:
             url += '&' + urlencode({'pageToken': page_token})
-
-        response = requests.get(url)
-        data = json.loads(response.text)
-        try:
-            assert response.status_code == 200
-        except AssertionError:
-            return {
-                    'status': 'error',
-                    'video_data': [],
-                    'page_token': None,
-                }
-
         video_data = []
 
-        while data['nextPageToken']:
+        while True:
+            response = requests.get(url)
+            data = json.loads(response.text)
+            if response.status_code != 200:
+                if response.status_code == 403:
+                    self.build_url_with_new_key(query_params)
+                    continue
+                else:
+                    self.log_error_response(response)
+                    return {
+                        'status'    : 'error',
+                        'video_data': video_data,
+                        'page_token': page_token,
+                        'reason'    : data["error"]["message"]
+                    }
+            if not data['items'] or not data['nextPageToken']:
+                break
             for item in data['items']:
-
                 video_data_dict = {
-                    'youtube_id': item['id']['videoId'],
-                    'title': item['snippet']['title'],
-                    'published_at': parser.parse(item['snippet']['publishedAt']),
-                    'description': item['snippet']['description']
+                    'youtube_id'    : item['id']['videoId'],
+                    'title'         : item['snippet']['title'],
+                    'published_at'  : parser.parse(item['snippet']['publishedAt']),
+                    'description'   : item['snippet']['description']
                 }
-
                 video_data.append(video_data_dict)
-            try:
-                url = self.url + '&' + urlencode({'pageToken': data['nextPageToken']})
-                response = requests.get(url)
-                assert response.status_code == 200
-                data = json.loads(response.text)
-            except AssertionError:
-                return {
-                        'status': 'error', 
-                        'video_data': video_data, 
-                        'page_token': data['nextPageToken'],
-                        }
+
+            page_token = data['nextPageToken']
+            url = self.url + '&' + urlencode({'pageToken': page_token})
         
         return {
-            'status': 'success', 
+            'status'    : 'success', 
             'video_data': video_data,
         }
+
+    def log_error_response(self, response):
+        logger.error('*' * 100)
+        logger.error(f'got response status_code: - {response.status_code}')
+        logger.error(response.text)
+        logger.error('*' * 100)
 

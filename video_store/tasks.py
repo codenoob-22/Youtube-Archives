@@ -18,8 +18,8 @@ def fetch_and_add_videos_to_db():
     try:
         latest_published_date = Video.objects.all().ordered_by('-published_at').first().published_at
     except AttributeError:
-        #in case there is no video we are fetching videos published just one second ago :D 
-        latest_published_date = datetime.now(UTC) - timedelta(seconds=1)
+        #in case there is no video we are fetching videos published just one minute ago :D 
+        latest_published_date = datetime.now(UTC) - timedelta(minutes=1)
     api_key = APIKey.get_api_key()
     y = YouTube(api_key)
     global SEARCH_TERM
@@ -31,14 +31,10 @@ def fetch_and_add_videos_to_db():
             store it in the remaining jobs.
         '''
         video_data = response['video_data']
-        if video_data:
+        if video_data and response.get('page_token'):
             upper_bound = video_data[0]['published_at']    
-            r = RemainingJobs.objects.create(page_token=response['page_token'], 
-                                        lower_date_bound=latest_published_date,
-                                        upper_date_bound=upper_bound)
-        
-        APIKey.set_status_to_exhausted(api_key)
-        logger.info(f"{api_key} got exhausted")
+            RemainingJobs.add_job(response['page_token'], upper_bound, latest_published_date, response['reason'])
+
     video_data = response['video_data']
     videos = [Video(**data) for data in video_data]
     Video.objects.bulk_create(videos)
@@ -63,11 +59,12 @@ def complete_remaining_jobs():
             '''
             video_data = response['video_data']
             # check if page_token is not null, otherwise we can lose our progress track
-            if video_data and response['page_token']:
+            if response['page_token']:
                 job.page_token = response['page_token']  
-                job.save() 
-            
-            APIKey.set_status_to_exhausted(api_key)
+                job.save()
+        
+        if response['status'] == 'success':
+            job.delete()
         video_data = response['video_data']
         videos = [Video(**data) for data in video_data]
         Video.objects.bulk_create(videos)
