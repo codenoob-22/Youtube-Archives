@@ -42,8 +42,8 @@ class APIkeySerializer(serializers.ModelSerializer):
 
 class APIKeyView(viewsets.ModelViewSet):
     serializer_class = APIkeySerializer
-    queryset = APIKey.objects.all()
-    
+    queryset = APIKey.objects.all().order_by('-last_used')
+
 
 APIKeyRoute = DefaultRouter()
 APIKeyRoute.register(r'', APIKeyView, basename='api_key')
