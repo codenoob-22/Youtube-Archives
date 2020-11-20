@@ -32,6 +32,10 @@ currently there is no dashboard, but there is a little hack, you can visit this 
 ```
 localhost:8000/video_store/search/
 ```
+submit API keys on url -
+```
+localhost:8000/video_store/youtube_keys/
+```
 
 For docker file you would need to build image,
 Sorry, this was my first time with docker so have a very basic docker setup.
@@ -58,8 +62,9 @@ localhost:8000/video_store/search/
 you can use it by using 
 ```
  python manage.py shell_plus --notebook
-```use 
+```
+NOTE- use-
 ```
 os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 ```
-To run functionalities normaly
+To run functionalities normaly on jupyter notebook
