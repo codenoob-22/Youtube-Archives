@@ -68,6 +68,7 @@ def complete_remaining_jobs():
             job.save()
     
     if response['status'] == 'success':
+        logger.info(f"Job {job.id} sucessfully completed, deleting the job")
         job.delete()
     video_data = response['video_data']
     Video.store_to_db(video_data)

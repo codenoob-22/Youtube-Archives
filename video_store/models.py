@@ -53,7 +53,7 @@ class Video(models.Model):
         logger.info(f"found existing youtube_ids - {existing_youtube_ids}")
         videos = [Video(**data) for data in video_data \
                     if data['youtube_id'] not in existing_youtube_ids \
-                    and data['youtube_id']]
+                    and data['youtube_id'] != '']
 
         Video.objects.bulk_create(videos)
         logger.info(f"{len(videos)} video/s have been added to database")
