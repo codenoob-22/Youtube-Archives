@@ -1,5 +1,5 @@
-import pytz
-from datetime import datetime, timezone, timedelta
+from django.utils import timezone
+from datetime import datetime, timedelta
 
 
 from video_store.models import Video, APIKey, RemainingJobs
@@ -14,12 +14,11 @@ SEARCH_TERM = "medical"
 
 def fetch_and_add_videos_to_db():
     ''' task for fetching videos and put it into DB '''
-    UTC = pytz.timezone('UTC')
     try:
         latest_published_date = Video.objects.all().order_by('-published_at').first().published_at
     except AttributeError:
         #in case there is no video we are fetching videos published last 1 hour 
-        latest_published_date = datetime.now(UTC) - timedelta(hours=1)
+        latest_published_date = timezone.now() - timedelta(hours=1)
     api_key = APIKey.get_api_key()
     y = YouTube(api_key)
     global SEARCH_TERM
@@ -44,6 +43,7 @@ def complete_remaining_jobs():
     if not job:
         return
 
+    logger.info(f"processing remaining job id {job.id}")
     api_key = APIKey.get_api_key()
     y = YouTube(api_key)
 
@@ -68,6 +68,6 @@ def complete_remaining_jobs():
 
 def refresh_keys():
     '''refresh quotas for keys that have been inactive for 1 day'''
-    UTC = pytz.timezone('UTC')
-    refresh_time = datetime.now(UTC) - timedelta(days=1, minutes=1)
+    logger.info("refreshing keys")
+    refresh_time = timezone.now() - timedelta(days=1, minutes=1)
     APIKey.objects.filter(quota_available=False, last_used__lte=refresh_time).update(quota_available=True)

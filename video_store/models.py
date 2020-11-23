@@ -1,4 +1,4 @@
-import pytz
+
 from datetime import datetime, timedelta
 
 from django.db import models
@@ -70,21 +70,19 @@ class APIKey(models.Model):
     @staticmethod
     def get_api_key():
         # using the one which is least recently used
-        UTC = pytz.timezone('UTC')
         least_recent_apikey = APIKey.objects.filter(quota_available=True).order_by('last_used').first()
         if not least_recent_apikey:
             logger.exception("FATAL: active API keys do not exist!!!!")
             raise ValueError("we are exhausted on API keys")
-        least_recent_apikey.last_used = datetime.now(UTC)
+        least_recent_apikey.last_used = timezone.now()
         least_recent_apikey.save()
         return least_recent_apikey.api_key
 
     # @sync_to_async
     @staticmethod
     def set_status_to_exhausted(api_key):
-        UTC = pytz.timezone('UTC')
         logger.info(f'{api_key} got exhausted')
-        APIKey.objects.filter(api_key=api_key).update(quota_available=False, last_used=datetime.now(UTC))
+        APIKey.objects.filter(api_key=api_key).update(quota_available=False, last_used=timezone.now())
     
 class RemainingJobs(models.Model):
     ''' 
