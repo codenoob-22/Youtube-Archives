@@ -31,12 +31,20 @@ def fetch_and_add_videos_to_db():
         '''
         video_data = response['video_data']
         if video_data and response.get('page_token'):
-            upper_bound = video_data[0]['published_at']    
-            RemainingJobs.add_job(response['page_token'], upper_bound, latest_published_date, response['reason'])
+            upper_bound = video_data[0]['published_at']
+            try:   
+                RemainingJobs.add_job(response['page_token'], upper_bound, latest_published_date, response['reason'])
+            except Exxception as e:
+                logger.error("failed to add job")
+                logger.exception(e)
 
     video_data = response['video_data']
-    Video.store_to_db(video_data)
-
+    logger.info(f"got video data of {len(video_data)}")
+    try:
+        Video.store_to_db(video_data)
+    except Exception as e:
+        logger.error("failing to save videos to db!")
+        logger.exception(e)
 def complete_remaining_jobs():
     
     job = RemainingJobs.get_oldest_job()

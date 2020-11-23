@@ -50,6 +50,7 @@ class Video(models.Model):
         ''' method for storing video data along with handling duplication of any video '''
         youtube_ids = [v['youtube_id'] for v in video_data]
         existing_youtube_ids = Video.objects.filter(youtube_id__in=youtube_ids).values_list('youtube_id', flat=True)
+        logger.info(f"found existing youtube_ids - {existing_youtube_ids}")
         videos = [Video(**data) for data in video_data \
                     if data['youtube_id'] not in existing_youtube_ids \
                     and data['youtube_id']]

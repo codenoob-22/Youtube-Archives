@@ -52,48 +52,52 @@ class YouTube:
             url += '&' + urlencode({'pageToken': page_token})
         video_data = []
         count = 0
-        
-        while True:
-            response = requests.get(url)
-            data = json.loads(response.text)
-            if response.status_code != 200:
-                if response.status_code == 403:
-                    try:
-                        self.build_url_with_new_key(query_params)
-                        if page_token:
-                            url = self.url + urlencode({'pageToken': page_token}) 
-                    except ValueError:
+        try:
+            while True:
+                response = requests.get(url)
+                data = json.loads(response.text)
+                if response.status_code != 200:
+                    if response.status_code == 403:
+                        try:
+                            self.build_url_with_new_key(query_params)
+                            if page_token:
+                                url = self.url + urlencode({'pageToken': page_token}) 
+                        except ValueError:
+                            return {
+                            'status'    : 'error',
+                            'video_data': video_data,
+                            'page_token': page_token,
+                            'reason'    : "all keys have been exhausted",
+                        }
+                        continue
+                    else:
+                        self.log_error_response(response)
                         return {
-                        'status'    : 'error',
-                        'video_data': video_data,
-                        'page_token': page_token,
-                        'reason'    : "all keys have been exhausted",
-                    }
-                    continue
-                else:
-                    self.log_error_response(response)
-                    return {
-                        'status'    : 'error',
-                        'video_data': video_data,
-                        'page_token': page_token,
-                        'reason'    : data["error"]["message"]
-                    }
-            for item in data['items']:
-                video_data_dict = {
-                    'youtube_id'    : item['id']['videoId'],
-                    'title'         : item['snippet']['title'],
-                    'published_at'  : parser.parse(item['snippet']['publishedAt']),
-                    'description'   : item['snippet']['description']
-                }
-                video_data.append(video_data_dict)
+                            'status'    : 'error',
+                            'video_data': video_data,
+                            'page_token': page_token,
+                            'reason'    : data["error"]["message"]
+                        }
+                for item in data['items']:
+                    if item['id']['kind'] == "youtube#video":
+                        video_data_dict = {
+                            'youtube_id'    : item['id']['videoId'],
+                            'title'         : item['snippet']['title'],
+                            'published_at'  : parser.parse(item['snippet']['publishedAt']),
+                            'description'   : item['snippet']['description']
+                        }
+
+                        video_data.append(video_data_dict)
+                
+                if not data['items'] or not data['nextPageToken']:
+                    logger.info(f"got end after {count} pages and got {len(video_data)} videos")
+                    break
+                count += 1
+                page_token = data['nextPageToken']
+                url = self.url + '&' + urlencode({'pageToken': page_token})
+        except Exception as e:
+            logger.exception(e)
             
-            if not data['items'] or not data['nextPageToken']:
-                logger.info(f"got end after {count} pages")
-                break
-            count += 1
-            page_token = data['nextPageToken']
-            url = self.url + '&' + urlencode({'pageToken': page_token})
-        
         return {
             'status'    : 'success', 
             'video_data': video_data,

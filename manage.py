@@ -2,6 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import logging
 
 
 def main():
@@ -16,6 +17,12 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
+
+    def log_uncaught_exceptions(type, value, tb):
+        logger = logging.getLogger("process_log")
+        logger.exception(f"uncaught exception- {type}|||{value}||| {tb}")
+
+    sys.excepthook = log_uncaught_exceptions
 
 
 if __name__ == '__main__':
