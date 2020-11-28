@@ -69,6 +69,7 @@ os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 ```
 To run functionalities normaly on jupyter notebook
 
+DESIGn CALCULATION AND DETAILS- 
 
 - youtube daily quota - 100,00
 - quota per search hit - 100 
