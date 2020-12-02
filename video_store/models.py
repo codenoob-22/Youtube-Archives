@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 from django.db import models
 from django.db.models import CharField, TextField, DateTimeField, IntegerField, BooleanField
-from django.db.models import Q
+from django.db.models import Q, F, CheckConstraint
 from asgiref.sync import sync_to_async
 from django.utils import timezone
 # Create your models here.
@@ -98,6 +98,14 @@ class RemainingJobs(models.Model):
     lower_date_bound    = DateTimeField(help_text="storing the lower bound of date so that i can filter using after query")
     upper_date_bound    = DateTimeField(help_text="storing upper bound so we know that our list is between the bounds")
     reason_for_failure  = TextField(default='', help_text="can be used for analysis of errors") 
+
+    class Meta:
+        constraints= [
+            CheckConstraint(
+                check= Q(upper_date_bound__gt=F('lower_date_bound')),
+                name="check valid boundaries"
+            )
+        ]
 
     # @sync_to_async
     @staticmethod
