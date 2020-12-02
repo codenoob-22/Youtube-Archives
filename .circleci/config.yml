@@ -11,7 +11,8 @@ jobs:
             - run:
                 name: installing project dependencies
                 command: |
-                    python3.7 -m env venv
+                    pip3 install virtualenv
+                    virtualenv -p python3.7.4 venv
                     source venv/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
