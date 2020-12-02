@@ -132,3 +132,887 @@ INFO 2020-11-19 17:50:03,107 platforms 8848 22 got apikey as AIzaSyB8R0la8VKAN7-
 INFO 2020-11-19 17:50:03,107 platforms 8848 43 checking for published after- 2020-11-19 17:16:41+00:00
 INFO 2020-11-19 17:50:04,591 platforms 8848 88 got end after 1 pages
 INFO 2020-11-19 17:50:04,672 models 8848 57 1 video/s have been added to database
+INFO 2020-11-23 08:01:00,964 platforms 8649 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:01:00,990 platforms 8649 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:06:49,395 tasks 9399 71 refreshing keys
+INFO 2020-11-23 08:07:05,229 tasks 9399 71 refreshing keys
+INFO 2020-11-23 08:07:06,757 tasks 9399 71 refreshing keys
+INFO 2020-11-23 08:14:02,839 tasks 10519 71 refreshing keys
+INFO 2020-11-23 08:14:04,106 platforms 10518 22 got apikey as sadazcfszcvsdvcvvvdf
+INFO 2020-11-23 08:14:04,106 platforms 10518 44 checking for published after- 2020-11-19 17:22:31+00:00
+ERROR 2020-11-23 08:14:04,305 platforms 10518 103 ****************************************************************************************************
+ERROR 2020-11-23 08:14:04,308 platforms 10518 104 got response status_code: - 400
+ERROR 2020-11-23 08:14:04,309 platforms 10518 105 {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+ERROR 2020-11-23 08:14:04,312 platforms 10518 106 ****************************************************************************************************
+INFO 2020-11-23 08:14:04,314 models 10518 58 0 video/s have been added to database
+INFO 2020-11-23 08:16:02,225 tasks 10598 71 refreshing keys
+INFO 2020-11-23 08:16:02,535 platforms 10599 22 got apikey as sadazcfszcvsdcccvcvvvdf
+INFO 2020-11-23 08:16:02,536 platforms 10599 44 checking for published after- 2020-11-19 17:22:31+00:00
+ERROR 2020-11-23 08:16:02,833 platforms 10599 103 ****************************************************************************************************
+ERROR 2020-11-23 08:16:02,834 platforms 10599 104 got response status_code: - 400
+ERROR 2020-11-23 08:16:02,834 platforms 10599 105 {
+  "error": {
+    "code": 400,
+    "message": "API key not valid. Please pass a valid API key.",
+    "errors": [
+      {
+        "message": "API key not valid. Please pass a valid API key.",
+        "domain": "global",
+        "reason": "badRequest"
+      }
+    ],
+    "status": "INVALID_ARGUMENT"
+  }
+}
+
+ERROR 2020-11-23 08:16:02,834 platforms 10599 106 ****************************************************************************************************
+INFO 2020-11-23 08:16:02,835 models 10599 58 0 video/s have been added to database
+INFO 2020-11-23 08:18:02,872 tasks 10717 71 refreshing keys
+INFO 2020-11-23 08:18:03,397 platforms 10718 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:18:03,398 platforms 10718 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:18:07,862 platforms 10718 91 got end after 8 pages
+INFO 2020-11-23 08:20:01,698 tasks 11035 74 refreshing keys
+INFO 2020-11-23 08:20:02,588 platforms 11036 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:20:02,589 platforms 11036 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:22:01,779 tasks 11286 74 refreshing keys
+INFO 2020-11-23 08:22:03,154 platforms 11288 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:22:03,155 platforms 11288 44 checking for published after- 2020-11-19 17:22:31+00:00
+==================
+INFO 2020-11-23 08:23:02,523 tasks 11397 74 refreshing keys
+INFO 2020-11-23 08:23:03,679 platforms 11399 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:23:03,680 platforms 11399 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:24:02,665 platforms 11444 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:24:02,665 platforms 11444 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:24:02,839 tasks 11443 74 refreshing keys
+INFO 2020-11-23 08:25:02,130 tasks 11489 74 refreshing keys
+INFO 2020-11-23 08:25:02,679 platforms 11491 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:25:02,680 platforms 11491 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:26:02,061 tasks 11570 75 refreshing keys
+INFO 2020-11-23 08:26:02,715 platforms 11572 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:26:02,716 platforms 11572 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:27:02,513 tasks 11753 75 refreshing keys
+INFO 2020-11-23 08:27:04,180 platforms 11755 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:27:04,181 platforms 11755 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:28:02,142 tasks 11836 75 refreshing keys
+INFO 2020-11-23 08:28:03,150 platforms 11838 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:28:03,151 platforms 11838 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:30:02,973 tasks 12146 75 refreshing keys
+INFO 2020-11-23 08:30:03,651 platforms 12148 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:30:03,652 platforms 12148 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:35:02,527 platforms 12329 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:35:02,528 platforms 12329 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:35:02,657 tasks 12330 75 refreshing keys
+INFO 2020-11-23 08:37:02,056 platforms 9399 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:37:02,057 platforms 9399 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:40:02,492 tasks 12792 75 refreshing keys
+INFO 2020-11-23 08:40:02,941 platforms 12795 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:40:02,942 platforms 12795 44 checking for published after- 2020-11-19 17:22:31+00:00
+ERROR 2020-11-23 08:40:06,693 platforms 12795 90 'videoId'
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/platforms.py", line 84, in get_video_results
+    'youtube_id'    : item['id']['videoId'],
+KeyError: 'videoId'
+ERROR 2020-11-23 08:40:06,694 platforms 12795 91 {'kind': 'youtube#searchResult', 'etag': 'xNQaif03lSzK30eYCJzmDZJCw_Y', 'id': {'kind': 'youtube#channel', 'channelId': 'UC0-sNWGQe7hz-FimQtM6esg'}, 'snippet': {'publishedAt': '2020-11-20T09:59:25Z', 'channelId': 'UC0-sNWGQe7hz-FimQtM6esg', 'title': 'South Medical', 'description': '', 'thumbnails': {'default': {'url': 'https://yt3.ggpht.com/ytc/AAUvwnglC5pYZKhgLWhUwkkjAhXRlc0lO27q24JDvw=s88-c-k-c0xffffffff-no-rj-mo'}, 'medium': {'url': 'https://yt3.ggpht.com/ytc/AAUvwnglC5pYZKhgLWhUwkkjAhXRlc0lO27q24JDvw=s240-c-k-c0xffffffff-no-rj-mo'}, 'high': {'url': 'https://yt3.ggpht.com/ytc/AAUvwnglC5pYZKhgLWhUwkkjAhXRlc0lO27q24JDvw=s800-c-k-c0xffffffff-no-rj-mo'}}, 'channelTitle': 'South Medical', 'liveBroadcastContent': 'none', 'publishTime': '2020-11-20T09:59:25Z'}}
+INFO 2020-11-23 08:40:07,676 platforms 12795 96 got end after 8 pages
+INFO 2020-11-23 08:40:07,678 tasks 12795 38 got video data of 397
+ERROR 2020-11-23 08:40:07,705 tasks 12795 42 failing to save videos to db!
+INFO 2020-11-23 08:41:02,640 tasks 12946 75 refreshing keys
+INFO 2020-11-23 08:41:03,407 platforms 12947 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 08:41:03,408 platforms 12947 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 08:41:03,684 models 12947 84 AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE got exhausted
+ERROR 2020-11-23 08:41:03,765 models 12947 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:41:03,765 tasks 12947 38 got video data of 0
+INFO 2020-11-23 08:41:03,766 models 12947 58 0 video/s have been added to database
+INFO 2020-11-23 08:42:02,587 tasks 13032 75 refreshing keys
+ERROR 2020-11-23 08:42:02,794 models 13033 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:43:03,056 tasks 13185 79 refreshing keys
+ERROR 2020-11-23 08:43:03,117 models 13183 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 08:44:01,852 models 13247 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:44:02,159 tasks 13248 79 refreshing keys
+ERROR 2020-11-23 08:45:02,277 models 13438 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:45:02,339 tasks 13439 79 refreshing keys
+INFO 2020-11-23 08:46:02,230 tasks 13523 79 refreshing keys
+ERROR 2020-11-23 08:46:02,556 models 13524 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 08:47:02,356 models 13693 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:47:02,542 tasks 13692 79 refreshing keys
+ERROR 2020-11-23 08:48:02,569 models 13732 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:48:02,649 tasks 13730 79 refreshing keys
+INFO 2020-11-23 08:49:02,571 tasks 13806 79 refreshing keys
+ERROR 2020-11-23 08:49:02,653 models 13807 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 08:50:02,845 models 13945 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:50:02,925 tasks 13943 79 refreshing keys
+INFO 2020-11-23 08:51:01,994 tasks 14028 79 refreshing keys
+ERROR 2020-11-23 08:51:02,003 models 14030 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 08:52:02,356 models 14148 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:52:02,474 tasks 14150 79 refreshing keys
+ERROR 2020-11-23 08:53:02,289 models 14362 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:53:02,578 tasks 14360 79 refreshing keys
+INFO 2020-11-23 08:54:02,577 tasks 14575 79 refreshing keys
+ERROR 2020-11-23 08:54:02,586 models 14576 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:55:02,355 tasks 14606 79 refreshing keys
+ERROR 2020-11-23 08:55:02,624 models 14608 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:56:02,803 tasks 14693 79 refreshing keys
+ERROR 2020-11-23 08:56:02,850 models 14691 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:57:02,113 tasks 14860 79 refreshing keys
+ERROR 2020-11-23 08:57:02,149 models 14857 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 08:58:02,212 models 14989 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 08:58:02,214 tasks 14988 79 refreshing keys
+INFO 2020-11-23 08:59:02,061 tasks 15079 79 refreshing keys
+ERROR 2020-11-23 08:59:02,216 models 15080 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:00:02,076 tasks 15144 79 refreshing keys
+ERROR 2020-11-23 09:00:02,314 models 15145 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:01:02,313 models 15344 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:01:02,416 tasks 15343 79 refreshing keys
+ERROR 2020-11-23 09:02:02,506 models 15487 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:02:02,583 tasks 15485 79 refreshing keys
+INFO 2020-11-23 09:03:02,697 tasks 15563 79 refreshing keys
+ERROR 2020-11-23 09:03:02,777 models 15565 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:04:02,618 models 15624 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:04:02,868 tasks 15625 79 refreshing keys
+ERROR 2020-11-23 09:05:02,766 models 15654 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:05:02,768 tasks 15655 79 refreshing keys
+INFO 2020-11-23 09:06:01,812 tasks 15688 79 refreshing keys
+ERROR 2020-11-23 09:06:02,170 models 15692 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:07:01,964 models 15757 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:07:02,201 tasks 15758 79 refreshing keys
+INFO 2020-11-23 09:08:01,994 tasks 15783 79 refreshing keys
+ERROR 2020-11-23 09:08:02,261 models 15784 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:09:02,086 tasks 15842 79 refreshing keys
+ERROR 2020-11-23 09:09:02,310 models 15845 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:10:02,170 tasks 15923 79 refreshing keys
+ERROR 2020-11-23 09:10:02,408 models 15924 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:11:02,747 tasks 15996 79 refreshing keys
+ERROR 2020-11-23 09:11:02,809 models 15995 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:12:02,585 models 16069 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:12:02,859 tasks 16068 79 refreshing keys
+ERROR 2020-11-23 09:13:01,603 models 16097 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:13:01,881 tasks 16096 79 refreshing keys
+INFO 2020-11-23 09:14:01,885 tasks 16124 79 refreshing keys
+ERROR 2020-11-23 09:14:01,893 models 16125 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:15:01,601 tasks 16157 79 refreshing keys
+ERROR 2020-11-23 09:15:01,902 models 16160 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:16:01,888 tasks 16187 79 refreshing keys
+ERROR 2020-11-23 09:16:01,897 models 16186 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:17:01,603 tasks 16242 79 refreshing keys
+ERROR 2020-11-23 09:17:01,915 models 16244 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:18:01,852 tasks 16263 79 refreshing keys
+ERROR 2020-11-23 09:18:01,853 models 16265 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:19:02,622 tasks 16293 79 refreshing keys
+ERROR 2020-11-23 09:19:02,863 models 16294 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:20:02,622 tasks 16320 79 refreshing keys
+ERROR 2020-11-23 09:20:02,868 models 16321 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:37:01,864 tasks 18345 79 refreshing keys
+ERROR 2020-11-23 09:37:01,874 models 18347 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:38:01,697 models 18579 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:38:01,938 tasks 18578 79 refreshing keys
+ERROR 2020-11-23 09:39:01,880 models 18702 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:39:01,929 tasks 18705 79 refreshing keys
+INFO 2020-11-23 09:40:01,695 tasks 18811 79 refreshing keys
+ERROR 2020-11-23 09:40:01,876 models 18813 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:41:01,705 tasks 18858 79 refreshing keys
+ERROR 2020-11-23 09:41:01,926 models 18860 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:42:01,815 tasks 18932 79 refreshing keys
+ERROR 2020-11-23 09:42:01,971 models 18933 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:43:01,771 tasks 19016 79 refreshing keys
+ERROR 2020-11-23 09:43:01,932 models 19017 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:44:02,295 models 19402 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:44:02,330 tasks 19401 79 refreshing keys
+ERROR 2020-11-23 09:45:02,335 models 19467 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:45:02,531 tasks 19472 79 refreshing keys
+INFO 2020-11-23 09:46:02,551 tasks 19607 79 refreshing keys
+INFO 2020-11-23 09:46:03,386 platforms 19610 22 got apikey as AIzaSyALTHAkK4_F40y93xGjKXOOoH_-0y2Uo0E
+INFO 2020-11-23 09:46:03,387 platforms 19610 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 09:46:03,812 models 19610 84 AIzaSyALTHAkK4_F40y93xGjKXOOoH_-0y2Uo0E got exhausted
+ERROR 2020-11-23 09:46:03,920 models 19610 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:46:03,921 tasks 19610 42 got video data of 0
+INFO 2020-11-23 09:46:03,921 models 19610 58 0 video/s have been added to database
+INFO 2020-11-23 09:47:01,741 tasks 19766 79 refreshing keys
+ERROR 2020-11-23 09:47:01,981 models 19765 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:48:01,986 tasks 20153 79 refreshing keys
+INFO 2020-11-23 09:48:02,101 platforms 20155 22 got apikey as AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE
+INFO 2020-11-23 09:48:02,102 platforms 20155 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 09:48:04,042 models 20155 84 AIzaSyB8R0la8VKAN7-dIX0ixxtoIaFWVFZGEnE got exhausted
+ERROR 2020-11-23 09:48:04,440 platforms 20155 105 ****************************************************************************************************
+ERROR 2020-11-23 09:48:04,441 platforms 20155 106 got response status_code: - 400
+ERROR 2020-11-23 09:48:04,441 platforms 20155 107 {
+  "error": {
+    "code": 400,
+    "message": "'snippetpageToken=CJYBEAA'",
+    "errors": [
+      {
+        "message": "'snippetpageToken=CJYBEAA'",
+        "domain": "youtube.part",
+        "reason": "unknownPart",
+        "location": "part",
+        "locationType": "parameter"
+      }
+    ]
+  }
+}
+
+ERROR 2020-11-23 09:48:04,441 platforms 20155 108 ****************************************************************************************************
+INFO 2020-11-23 09:48:04,545 tasks 20155 42 got video data of 150
+ERROR 2020-11-23 09:48:04,566 tasks 20155 46 failing to save videos to db!
+INFO 2020-11-23 09:49:02,754 tasks 20253 79 refreshing keys
+INFO 2020-11-23 09:49:02,835 platforms 20255 22 got apikey as AIzaSyALTHAkK4_F40y93xGjKXOOoH_-0y2Uo0E
+INFO 2020-11-23 09:49:02,836 platforms 20255 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 09:49:02,839 tasks 20254 54 processing remaining job id 1
+INFO 2020-11-23 09:49:02,915 platforms 20254 22 got apikey as AIzaSyALTHAkK4_F40y93xGjKXOOoH_-0y2Uo0E
+INFO 2020-11-23 09:49:02,916 platforms 20254 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 09:49:02,917 platforms 20254 47  And published_before 2020-11-23 09:35:09+00:00
+INFO 2020-11-23 09:49:03,124 models 20255 84 AIzaSyALTHAkK4_F40y93xGjKXOOoH_-0y2Uo0E got exhausted
+ERROR 2020-11-23 09:49:03,242 models 20255 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:49:03,243 tasks 20255 42 got video data of 0
+INFO 2020-11-23 09:49:03,246 models 20255 58 0 video/s have been added to database
+INFO 2020-11-23 09:49:03,249 models 20254 84 AIzaSyALTHAkK4_F40y93xGjKXOOoH_-0y2Uo0E got exhausted
+ERROR 2020-11-23 09:49:03,322 models 20254 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:49:03,323 models 20254 58 0 video/s have been added to database
+INFO 2020-11-23 09:50:02,013 tasks 20460 54 processing remaining job id 1
+ERROR 2020-11-23 09:50:02,015 models 20460 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:50:02,305 tasks 20457 79 refreshing keys
+ERROR 2020-11-23 09:50:02,315 models 20459 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:51:02,130 tasks 20519 54 processing remaining job id 1
+ERROR 2020-11-23 09:51:02,132 models 20519 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:51:02,200 models 20520 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:51:02,345 tasks 20518 79 refreshing keys
+INFO 2020-11-23 09:52:02,018 tasks 20751 54 processing remaining job id 1
+ERROR 2020-11-23 09:52:02,020 models 20751 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:52:02,316 tasks 20750 79 refreshing keys
+ERROR 2020-11-23 09:52:02,328 models 20752 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:53:02,164 tasks 20851 54 processing remaining job id 1
+ERROR 2020-11-23 09:53:02,167 models 20851 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:53:02,402 tasks 20850 79 refreshing keys
+ERROR 2020-11-23 09:53:02,408 models 20852 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:54:02,284 tasks 21088 79 refreshing keys
+INFO 2020-11-23 09:54:02,299 tasks 21089 54 processing remaining job id 1
+ERROR 2020-11-23 09:54:02,302 models 21089 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:54:02,478 models 21090 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:55:02,217 models 21122 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:55:02,402 tasks 21121 54 processing remaining job id 1
+ERROR 2020-11-23 09:55:02,405 models 21121 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:55:02,480 tasks 21123 79 refreshing keys
+ERROR 2020-11-23 09:56:02,263 models 21233 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:56:02,386 tasks 21231 79 refreshing keys
+INFO 2020-11-23 09:56:02,482 tasks 21232 54 processing remaining job id 1
+ERROR 2020-11-23 09:56:02,484 models 21232 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:57:02,413 tasks 21334 54 processing remaining job id 1
+ERROR 2020-11-23 09:57:02,417 models 21334 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:57:02,591 models 21333 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:57:02,608 tasks 21335 79 refreshing keys
+INFO 2020-11-23 09:58:02,428 tasks 21451 54 processing remaining job id 1
+ERROR 2020-11-23 09:58:02,431 models 21451 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:58:02,513 tasks 21450 79 refreshing keys
+ERROR 2020-11-23 09:58:02,641 models 21452 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 09:59:02,331 tasks 21495 79 refreshing keys
+INFO 2020-11-23 09:59:02,628 tasks 21496 54 processing remaining job id 1
+ERROR 2020-11-23 09:59:02,630 models 21496 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 09:59:02,647 models 21497 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:00:02,366 models 21534 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:00:02,664 tasks 21533 79 refreshing keys
+INFO 2020-11-23 10:00:02,668 tasks 21535 54 processing remaining job id 1
+ERROR 2020-11-23 10:00:02,670 models 21535 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:01:02,389 tasks 21596 79 refreshing keys
+INFO 2020-11-23 10:01:02,703 tasks 21597 54 processing remaining job id 1
+ERROR 2020-11-23 10:01:02,705 models 21598 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:01:02,705 models 21597 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:02:02,542 models 21696 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:02:02,551 tasks 21694 79 refreshing keys
+INFO 2020-11-23 10:02:02,724 tasks 21695 54 processing remaining job id 1
+ERROR 2020-11-23 10:02:02,726 models 21695 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:03:02,492 models 21746 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:03:02,733 tasks 21744 79 refreshing keys
+INFO 2020-11-23 10:03:02,743 tasks 21745 54 processing remaining job id 1
+ERROR 2020-11-23 10:03:02,745 models 21745 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:04:02,560 models 21869 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:04:02,814 tasks 21870 54 processing remaining job id 1
+ERROR 2020-11-23 10:04:02,816 models 21870 75 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:04:02,821 tasks 21868 79 refreshing keys
+INFO 2020-11-23 10:05:02,751 tasks 21958 79 refreshing keys
+INFO 2020-11-23 10:05:02,891 platforms 21959 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:05:02,892 platforms 21959 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:05:02,944 tasks 21957 54 processing remaining job id 1
+INFO 2020-11-23 10:05:03,369 platforms 21957 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:05:03,370 platforms 21957 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:05:03,370 platforms 21957 47  And published_before 2020-11-23 09:35:09+00:00
+INFO 2020-11-23 10:05:16,522 platforms 21957 93 got end after 8 pages and got 397 videos
+INFO 2020-11-23 10:05:17,625 platforms 21959 93 got end after 8 pages and got 394 videos
+INFO 2020-11-23 10:05:17,625 tasks 21959 42 got video data of 394
+ERROR 2020-11-23 10:05:17,997 tasks 21959 46 failing to save videos to db!
+ERROR 2020-11-23 10:05:17,998 tasks 21959 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 57, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:06:01,698 tasks 21996 79 refreshing keys
+INFO 2020-11-23 10:06:02,443 platforms 21998 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:06:02,444 platforms 21998 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:06:23,081 platforms 21998 93 got end after 8 pages and got 393 videos
+INFO 2020-11-23 10:06:23,082 tasks 21998 42 got video data of 393
+ERROR 2020-11-23 10:06:23,111 tasks 21998 46 failing to save videos to db!
+ERROR 2020-11-23 10:06:23,111 tasks 21998 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 57, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:07:02,065 tasks 22058 79 refreshing keys
+INFO 2020-11-23 10:07:02,717 platforms 22059 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:07:02,718 platforms 22059 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:07:17,069 platforms 22059 93 got end after 8 pages and got 393 videos
+INFO 2020-11-23 10:07:17,069 tasks 22059 42 got video data of 393
+ERROR 2020-11-23 10:07:17,096 tasks 22059 46 failing to save videos to db!
+ERROR 2020-11-23 10:07:17,096 tasks 22059 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 57, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:08:01,788 tasks 22085 79 refreshing keys
+INFO 2020-11-23 10:08:02,547 platforms 22087 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:08:02,547 platforms 22087 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:08:07,967 platforms 22087 93 got end after 8 pages and got 395 videos
+INFO 2020-11-23 10:08:07,968 tasks 22087 42 got video data of 395
+ERROR 2020-11-23 10:08:08,002 tasks 22087 46 failing to save videos to db!
+ERROR 2020-11-23 10:08:08,002 tasks 22087 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 57, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:09:01,697 tasks 22129 79 refreshing keys
+INFO 2020-11-23 10:09:02,135 platforms 22136 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:09:02,135 platforms 22136 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:09:16,613 platforms 22136 93 got end after 8 pages and got 398 videos
+INFO 2020-11-23 10:09:16,613 tasks 22136 42 got video data of 398
+ERROR 2020-11-23 10:09:16,643 tasks 22136 46 failing to save videos to db!
+ERROR 2020-11-23 10:09:16,643 tasks 22136 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 57, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:10:02,434 platforms 22226 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:10:02,435 platforms 22226 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:10:02,599 tasks 22227 79 refreshing keys
+INFO 2020-11-23 10:10:07,111 platforms 22226 93 got end after 8 pages and got 393 videos
+INFO 2020-11-23 10:10:07,111 tasks 22226 42 got video data of 393
+ERROR 2020-11-23 10:10:07,140 tasks 22226 46 failing to save videos to db!
+ERROR 2020-11-23 10:10:07,141 tasks 22226 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 57, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+=================================
+
+INFO 2020-11-23 10:13:02,116 tasks 22518 79 refreshing keys
+INFO 2020-11-23 10:13:02,708 platforms 22520 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:13:02,709 platforms 22520 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:13:06,887 platforms 22520 93 got end after 8 pages and got 397 videos
+INFO 2020-11-23 10:13:06,888 tasks 22520 42 got video data of 397
+INFO 2020-11-23 10:13:06,894 models 22520 53 found existing youtube_ids - <QuerySet []>
+ERROR 2020-11-23 10:13:06,918 tasks 22520 46 failing to save videos to db!
+ERROR 2020-11-23 10:13:06,918 tasks 22520 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 58, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:14:01,901 tasks 22589 79 refreshing keys
+INFO 2020-11-23 10:14:02,526 platforms 22590 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:14:02,527 platforms 22590 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:14:28,091 platforms 22590 93 got end after 8 pages and got 393 videos
+INFO 2020-11-23 10:14:28,091 tasks 22590 42 got video data of 393
+INFO 2020-11-23 10:14:28,098 models 22590 53 found existing youtube_ids - <QuerySet []>
+ERROR 2020-11-23 10:14:28,128 tasks 22590 46 failing to save videos to db!
+ERROR 2020-11-23 10:14:28,128 tasks 22590 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 58, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:15:02,033 platforms 22636 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:15:02,034 platforms 22636 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:15:02,083 tasks 22634 79 refreshing keys
+INFO 2020-11-23 10:15:06,260 platforms 22636 93 got end after 8 pages and got 393 videos
+INFO 2020-11-23 10:15:06,260 tasks 22636 42 got video data of 393
+INFO 2020-11-23 10:15:06,265 models 22636 53 found existing youtube_ids - <QuerySet []>
+ERROR 2020-11-23 10:15:06,287 tasks 22636 46 failing to save videos to db!
+ERROR 2020-11-23 10:15:06,287 tasks 22636 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 58, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:16:02,259 tasks 22688 79 refreshing keys
+INFO 2020-11-23 10:16:03,798 platforms 22687 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:16:03,799 platforms 22687 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:16:12,294 platforms 22687 93 got end after 8 pages and got 393 videos
+INFO 2020-11-23 10:16:12,294 tasks 22687 42 got video data of 393
+INFO 2020-11-23 10:16:12,301 models 22687 53 found existing youtube_ids - <QuerySet []>
+ERROR 2020-11-23 10:16:12,326 tasks 22687 46 failing to save videos to db!
+ERROR 2020-11-23 10:16:12,326 tasks 22687 47 UNIQUE constraint failed: video_store_video.youtube_id
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/tasks.py", line 44, in fetch_and_add_videos_to_db
+    Video.store_to_db(video_data)
+  File "/home/sant/Desktop/backends/YoutubeArchive/video_store/models.py", line 58, in store_to_db
+    Video.objects.bulk_create(videos)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 507, in bulk_create
+    objs_without_pk, fields, batch_size, ignore_conflicts=ignore_conflicts,
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1277, in _batched_insert
+    self._insert(item, fields=fields, using=self.db, ignore_conflicts=ignore_conflicts)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/query.py", line 1254, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1397, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sant/Desktop/backends/myenv/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 413, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: video_store_video.youtube_id
+INFO 2020-11-23 10:17:02,220 tasks 22799 79 refreshing keys
+INFO 2020-11-23 10:17:03,453 platforms 22800 22 got apikey as AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w
+INFO 2020-11-23 10:17:03,453 platforms 22800 44 checking for published after- 2020-11-19 17:22:31+00:00
+INFO 2020-11-23 10:17:04,936 models 22800 85 AIzaSyA_uM3HZ1aiAGUG3UX_068ZrfpKf61pY6w got exhausted
+ERROR 2020-11-23 10:17:05,836 models 22800 76 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:17:05,938 tasks 22800 42 got video data of 100
+INFO 2020-11-23 10:17:05,941 models 22800 53 found existing youtube_ids - <QuerySet []>
+INFO 2020-11-23 10:17:06,082 models 22800 59 100 video/s have been added to database
+INFO 2020-11-23 10:18:01,780 tasks 22846 79 refreshing keys
+INFO 2020-11-23 10:18:02,083 tasks 22847 54 processing remaining job id 2
+ERROR 2020-11-23 10:18:02,086 models 22847 76 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:18:02,092 models 22848 76 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:19:01,855 tasks 22890 54 processing remaining job id 2
+ERROR 2020-11-23 10:19:01,857 models 22890 76 FATAL: active API keys do not exist!!!!
+NoneType: None
+ERROR 2020-11-23 10:19:02,023 models 22888 76 FATAL: active API keys do not exist!!!!
+NoneType: None
+INFO 2020-11-23 10:19:02,082 tasks 22889 79 refreshing keys
