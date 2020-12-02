@@ -11,7 +11,7 @@ jobs:
             - run:
                 name: installing project dependencies
                 command: |
-                    python 3.7 -m env venv
+                    python3.7 -m env venv
                     source venv/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
