@@ -11,8 +11,11 @@ jobs:
             - run:
                 name: installing project dependencies
                 command: |
+                    python 3.7 -m env venv
+                    source venv/bin/activate
                     pip install --upgrade pip
                     pip install -r requirements.txt
+
             # - save_cache:
             #     key: 
             #         - deps9-{{ .Branch }}-{{ checksum "requirements.txt" }}
